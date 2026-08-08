@@ -1,3 +1,12 @@
+## 0.1.2
+
+- Add IDE setup instructions for Android Studio / IntelliJ and VS Code, covering
+  both halves of the setup: passing `--vmservice-out-file` to your app's run
+  configuration, and running the bridge alongside it (a Shell Script run
+  configuration, or a `tasks.json` task).
+- Document that `~/.pub-cache/bin` must be on your `PATH` after
+  `dart pub global activate`.
+
 ## 0.1.1
 
 - Point documentation at the Flutter package's published name,
