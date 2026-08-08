@@ -1,9 +1,9 @@
 name: beacon_bridge
 description: >-
-  Desktop companion CLI for the beacon Flutter package. Attaches to your
-  running flutter run, saves each tapped widget's reference and screenshot,
-  and copies a paste-ready line to your clipboard.
-version: 0.1.0
+  Desktop companion CLI for the beacon_widget Flutter package. Attaches to
+  your running flutter run, saves each tapped widget's reference and
+  screenshot, and copies a paste-ready line to your clipboard.
+version: 0.1.1
 repository: https://github.com/moghoneim-code/beacon_bridge
 issue_tracker: https://github.com/moghoneim-code/beacon_bridge/issues
 topics:

@@ -1,8 +1,8 @@
 # beacon_bridge
 
-The desktop companion for the [`beacon`](https://pub.dev/packages/beacon) Flutter package.
+The desktop companion for the [`beacon_widget`](https://pub.dev/packages/beacon_widget) Flutter package.
 
-`beacon` lets you tap a widget in your running app. `beacon_bridge` receives that selection on
+`beacon_widget` lets you tap a widget in your running app. `beacon_bridge` receives that selection on
 your development machine, saves it, and copies a paste-ready reference to your clipboard:
 
 ```
@@ -19,8 +19,8 @@ dart pub global activate beacon_bridge
 
 ## Usage
 
-Add `beacon` to your Flutter app first — see
-[its documentation](https://pub.dev/packages/beacon) for the one-line setup.
+Add `beacon_widget` to your Flutter app first — see
+[its documentation](https://pub.dev/packages/beacon_widget) for the one-line setup.
 
 Then, from your project root, run your app with the VM service address written to a file:
 
