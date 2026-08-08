@@ -45,5 +45,10 @@ WrittenSelection writeSelection(Map<String, Object?> payload, {required Director
   final File jsonFile = File(p.join(refDir.path, 'sel-$id.json'));
   jsonFile.writeAsStringSync(const JsonEncoder.withIndent('  ').convert(json));
 
-  return WrittenSelection(id: id, jsonPath: p.relative(jsonFile.path, from: projectRoot), pngPath: pngPath, payload: json);
+  return WrittenSelection(
+    id: id,
+    jsonPath: p.relative(jsonFile.path, from: projectRoot),
+    pngPath: pngPath,
+    payload: json,
+  );
 }

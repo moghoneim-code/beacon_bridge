@@ -28,3 +28,7 @@ include: package:lints/recommended.yaml
 
 # For additional information about configuring this file, see
 # https://dart.dev/guides/language/analysis-options
+
+# The codebase is written to a 120-column width.
+formatter:
+  page_width: 120

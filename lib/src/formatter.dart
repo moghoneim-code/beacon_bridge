@@ -36,13 +36,16 @@ String formatSelection(Map<String, Object?> payload, {required String jsonPath, 
 /// sensible single-line form the way one reference's optional detail
 /// lines do.
 String formatMultiSelection(List<({Map<String, Object?> payload, String jsonPath})> items) {
-  return items.map((({Map<String, Object?> payload, String jsonPath}) item) {
-    final Map<String, Object?> target = item.payload['target'] as Map<String, Object?>? ?? const <String, Object?>{};
-    final String widget = (target['widget'] as String?) ?? 'Widget';
-    final String file = (target['file'] as String?) ?? '?';
-    final Object? line = target['line'];
-    return '[ref] $widget @ $file:$line · details: ${item.jsonPath}';
-  }).join('\n');
+  return items
+      .map((({Map<String, Object?> payload, String jsonPath}) item) {
+        final Map<String, Object?> target =
+            item.payload['target'] as Map<String, Object?>? ?? const <String, Object?>{};
+        final String widget = (target['widget'] as String?) ?? 'Widget';
+        final String file = (target['file'] as String?) ?? '?';
+        final Object? line = target['line'];
+        return '[ref] $widget @ $file:$line · details: ${item.jsonPath}';
+      })
+      .join('\n');
 }
 
 String? _sizeSegment(Map<String, Object?> payload) {

@@ -49,7 +49,11 @@ class Clipboard {
 /// first would undo the tool's entire purpose here — the whole point is
 /// that the developer's next ⌘V, whenever they get to it, pastes what they
 /// just selected — so this always takes the second option instead.
-Future<bool> copyToClipboard(String text, {required void Function(String message) onStatus, Clipboard clipboard = const Clipboard()}) async {
+Future<bool> copyToClipboard(
+  String text, {
+  required void Function(String message) onStatus,
+  Clipboard clipboard = const Clipboard(),
+}) async {
   final String? previous = await clipboard.read();
   final bool ok = await clipboard.write(text);
   if (!ok) {

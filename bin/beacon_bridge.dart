@@ -58,7 +58,8 @@ Future<void> _handleSelected(Map<String, Object?> payload, {required Directory r
 
 Future<void> _handleSelectedMany(Map<String, Object?> payload, {required Directory refDir}) async {
   final List<Object?> items = payload['items'] as List<Object?>? ?? const <Object?>[];
-  final List<({Map<String, Object?> payload, String jsonPath})> written = <({Map<String, Object?> payload, String jsonPath})>[];
+  final List<({Map<String, Object?> payload, String jsonPath})> written =
+      <({Map<String, Object?> payload, String jsonPath})>[];
   for (final Object? item in items) {
     if (item is! Map<String, Object?>) continue;
     final WrittenSelection selection = writeSelection(item, refDir: refDir);

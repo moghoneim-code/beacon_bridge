@@ -1,3 +1,10 @@
+## 0.1.3
+
+- Shorten the package description to pub.dev's recommended 60–180 characters.
+- Add an `example/` directory walking through a full session.
+- Set the formatter's page width to 120 to match the codebase, and format
+  accordingly.
+
 ## 0.1.2
 
 - Add IDE setup instructions for Android Studio / IntelliJ and VS Code, covering
